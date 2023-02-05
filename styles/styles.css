@@ -1,46 +1,102 @@
 body {
-
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
 }
 /* styling of squares*/
 
 .squares {
-
+    background-color: #370617;
+    position: center;
+    width: 1152px;
+    height: 700px;
+    display: flex;
+    flex-flow: column wrap;
 }
 .squares__block {
-
+    background-color: #F48C06;
+    width: 468px;
+    height: 160px; 
+    position: relative;
+    display: flex;
+    margin: 20px;
 }
 .squares__items {
+    background-color: #9D0208;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: relative;
+    margin: 10px;
+    border-radius: 4px;;
+    min-width: 78px;
+    min-height: 78px;
+    max-width: 156px;
+    display: flex;
+    justify-content: center;
+
 
 }
 .squares--first {
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .squares--second {
-
-}
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
 .squares--third {
+    display: flex;
+    justify-content: space-around;
 
-}
+
+} 
+/* Here I cant seem to make the text appear on the same line, if not in the center of all boxes..*/
 .squares__block-text {
+    align-self: first baseline;
 
 }
-.squares--fourth {
 
+/* this box should be a bit thinner, couldn't find a good way to do this without adding specific height*/
+.center {
+    align-self: center;
+    align-items: flex-start;
+}
+
+.squares--fourth {
+    display: flex;
+    justify-content: center;
 }
 .squares--fifth {
-
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .alone {
-
+    align-self: flex-end;
 }
 .squares--sixth {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.grow {
+    flex-grow: 1;
+   }
 
 /* styling of circles */
 
 .circles {
+    background-color: #FAA307;
+    position: center;
+    width: 1152px;
+    height: 700px;
+    display: flex;
+    flex-flow: column wrap;
 
 }
 .circles__block {
@@ -65,5 +121,5 @@ body {
 
  }
  .different {
-    
+
  }
